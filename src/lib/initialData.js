@@ -1,0 +1,380 @@
+export const initialData = {
+  "profiles": [
+    {
+      "id": "ef804240-e8f7-4e0b-8f19-d147f51ff450",
+      "full_name": "Cut & Looks Administrator",
+      "email": "admin@cutandlooks.com",
+      "role": "admin",
+      "password_hash": "$2a$10$6FBF027LqyCXIULNRQ6c9e5uEgRoEyoZOnEY6pKMGNYWo135FT8dy",
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    }
+  ],
+  "business_settings": [
+    {
+      "id": "e3347b06-6414-4cfd-b068-25a6c34f5cc7",
+      "business_name": "Cut & Looks Sahakar Nagar",
+      "description": "Cut & Looks Sahakar Nagar is a premium unisex hair and beauty salon in Sahakar Nagar, Bengaluru. We specialize in precision haircuts, modern styling, hair treatments, coloring, and grooming services in a comfortable, hygienic, and client-centric environment.",
+      "address": "3H5V+G4C, 2, 14th Main Road, Sahakar Nagar, Byatarayanapura, Bengaluru, Karnataka 560092, India",
+      "phone": "+91 84313 57154",
+      "email": null,
+      "logo_url": null,
+      "google_maps_url": "https://www.google.com/maps/place/Cut+%26+Looks+Sahakar+Nagar/data=!4m2!3m1!1s0x0:0x385d0adee88321ee",
+      "google_reviews_url": "https://www.google.com/search?q=Cut+%26+Looks+Sahakar+Nagar+Google+reviews",
+      "opening_hours": "{\"monday\":{\"open\":\"09:30\",\"close\":\"21:00\",\"isOpen\":true,\"note\":\"Confirmed closing 9:00 PM\"},\"tuesday\":{\"open\":\"09:30\",\"close\":\"21:00\",\"isOpen\":true,\"note\":\"Confirmed closing 9:00 PM\"},\"wednesday\":{\"open\":\"09:30\",\"close\":\"21:00\",\"isOpen\":true,\"note\":\"Confirmed closing 9:00 PM\"},\"thursday\":{\"open\":\"09:30\",\"close\":\"21:00\",\"isOpen\":true,\"note\":\"Confirmed closing 9:00 PM\"},\"friday\":{\"open\":\"09:30\",\"close\":\"21:00\",\"isOpen\":true,\"note\":\"Confirmed closing 9:00 PM\"},\"saturday\":{\"open\":\"09:30\",\"close\":\"21:00\",\"isOpen\":true,\"note\":\"Confirmed closing 9:00 PM\"},\"sunday\":{\"open\":\"09:30\",\"close\":\"21:00\",\"isOpen\":true,\"note\":\"Confirmed closing 9:00 PM\"}}",
+      "social_links": "{\"whatsapp\":\"+918431357154\",\"instagram\":\"\",\"facebook\":\"\",\"youtube\":\"\"}",
+      "booking_settings": "{\"slot_interval_minutes\":30,\"max_advance_days\":14,\"min_notice_hours\":1,\"allow_stylist_selection\":false,\"require_email\":false,\"holiday_closures\":[]}",
+      "seo_title": "Cut & Looks Sahakar Nagar | Premium Unisex Hair & Beauty Salon in Bengaluru",
+      "seo_description": "Experience professional haircuts, grooming, styling, and hair spa treatments at Cut & Looks Sahakar Nagar, Bengaluru. Convenient appointment requests and personalized care.",
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    }
+  ],
+  "service_categories": [
+    {
+      "id": "4170b334-6674-44be-9dca-3b1cb7619374",
+      "name": "Haircuts and Styling",
+      "slug": "haircuts-and-styling",
+      "description": "Expert precision haircuts, blow-drys, and signature styling for men and women.",
+      "display_order": 1,
+      "is_active": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "1fc21c15-e28f-49d4-a729-e981a1c69d17",
+      "name": "Men's Grooming",
+      "slug": "mens-grooming",
+      "description": "Classic and contemporary beard styling, fades, trims, and rejuvenating facials.",
+      "display_order": 2,
+      "is_active": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "85036fb3-cb9a-40dd-9d64-cd42c470e5cf",
+      "name": "Women's Hair Services",
+      "slug": "womens-hair-services",
+      "description": "Customized hair cuts, layers, fringes, straightening, and glamorous styling.",
+      "display_order": 3,
+      "is_active": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "ed871d94-29ff-4843-92e3-80f336f6b1df",
+      "name": "Hair Colouring",
+      "slug": "hair-colouring",
+      "description": "Global hair colors, root touch-ups, highlights, balayage, and ammonia-free options.",
+      "display_order": 4,
+      "is_active": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "70fd7362-d405-4c1d-a54f-d7c3893205bd",
+      "name": "Hair Treatments and Hair Spa",
+      "slug": "hair-treatments-and-spa",
+      "description": "Intense deep conditioning, anti-dandruff therapy, keratin nourishment, and calming scalp spas.",
+      "display_order": 5,
+      "is_active": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "4a16e0b7-8f00-4fa3-a111-5779dc8e4de7",
+      "name": "Skin and Beauty Care",
+      "slug": "skin-and-beauty-care",
+      "description": "Refreshing facials, skin clean-ups, detan packs, and skincare rituals.",
+      "display_order": 6,
+      "is_active": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "8b318986-1843-4c97-9b93-a9e96c275449",
+      "name": "Hair Wash and Blow-Dry",
+      "slug": "hair-wash-and-blow-dry",
+      "description": "Relaxing hair wash rituals accompanied by professional blow-dry styling.",
+      "display_order": 7,
+      "is_active": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "7b047da3-02d6-40d8-8053-cecb6f2a6d44",
+      "name": "Other Salon Services",
+      "slug": "other-salon-services",
+      "description": "Special grooming rituals, threading, waxing, and custom salon consultations.",
+      "display_order": 8,
+      "is_active": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    }
+  ],
+  "services": [
+    {
+      "id": "97e8a732-1e3c-43a9-9be5-5b22f908334d",
+      "category_id": "4170b334-6674-44be-9dca-3b1cb7619374",
+      "name": "Classic Men's Precision Haircut",
+      "slug": "classic-mens-precision-haircut",
+      "description": "Detailed personal consultation, precision scissor and clipper haircut tailored to your face shape, followed by a neck trim and light styling.",
+      "image_url": "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80",
+      "price_inr": null,
+      "starting_price_inr": null,
+      "duration_minutes": 30,
+      "is_active": 1,
+      "display_order": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "d8f04e34-305e-4d15-8ea5-9f2f03627746",
+      "category_id": "4170b334-6674-44be-9dca-3b1cb7619374",
+      "name": "Women's Signature Haircut & Styling",
+      "slug": "womens-signature-haircut-styling",
+      "description": "Includes consultation on hair texture and lifestyle, sectioned cut, layered styling, and a clean professional finish.",
+      "image_url": "https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=800&q=80",
+      "price_inr": null,
+      "starting_price_inr": 600,
+      "duration_minutes": 45,
+      "is_active": 1,
+      "display_order": 2,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "b5baa3cc-52d8-423d-92df-b7264873b200",
+      "category_id": "1fc21c15-e28f-49d4-a729-e981a1c69d17",
+      "name": "Beard Sculpting & Contour Styling",
+      "slug": "beard-sculpting-contour-styling",
+      "description": "Precision beard shaping, razor lining, length blending, and application of soothing beard oil or balm.",
+      "image_url": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80",
+      "price_inr": null,
+      "starting_price_inr": null,
+      "duration_minutes": 25,
+      "is_active": 1,
+      "display_order": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T08:05:32.746Z"
+    },
+    {
+      "id": "047fd85f-1976-4532-9674-a5a544442dd0",
+      "category_id": "1fc21c15-e28f-49d4-a729-e981a1c69d17",
+      "name": "Men's Charcoal Detan & Cleanup",
+      "slug": "mens-charcoal-detan-cleanup",
+      "description": "Cleansing exfoliation, gentle steam, charcoal pack application, and deep hydration for refreshed skin.",
+      "image_url": "https://images.unsplash.com/photo-1512290900672-1f55b91b9247?auto=format&fit=crop&w=800&q=80",
+      "price_inr": null,
+      "starting_price_inr": 750,
+      "duration_minutes": 40,
+      "is_active": 1,
+      "display_order": 2,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "29461626-97a5-490c-956c-3935bfb94f79",
+      "category_id": "ed871d94-29ff-4843-92e3-80f336f6b1df",
+      "name": "Global Hair Colour Consultation & Application",
+      "slug": "global-hair-colour-application",
+      "description": "Full coverage premium hair coloration customized for your skin undertone, using gentle nourishing hair color formulations.",
+      "image_url": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
+      "price_inr": null,
+      "starting_price_inr": null,
+      "duration_minutes": 90,
+      "is_active": 1,
+      "display_order": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "f4b111fe-9c4b-46b6-b881-3b95078815c3",
+      "category_id": "ed871d94-29ff-4843-92e3-80f336f6b1df",
+      "name": "Balayage & Dimensional Highlights",
+      "slug": "balayage-dimensional-highlights",
+      "description": "Freehand hair painting or foil highlights designed to create natural multi-dimensional tone, shine, and depth.",
+      "image_url": "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=80",
+      "price_inr": null,
+      "starting_price_inr": null,
+      "duration_minutes": 120,
+      "is_active": 1,
+      "display_order": 2,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "576153a1-40b7-41bc-a93d-45af0fa6a77b",
+      "category_id": "70fd7362-d405-4c1d-a54f-d7c3893205bd",
+      "name": "Intense Moisture Hair Spa & Scalp Massage",
+      "slug": "intense-moisture-hair-spa",
+      "description": "Deep cleansing hair bath, nutrient-rich botanical hair mask, relaxing acupressure scalp massage, and warm steam infusion.",
+      "image_url": "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=800&q=80",
+      "price_inr": null,
+      "starting_price_inr": 900,
+      "duration_minutes": 60,
+      "is_active": 1,
+      "display_order": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "77beb258-3a7e-4d4a-9df5-c7da91161271",
+      "category_id": "70fd7362-d405-4c1d-a54f-d7c3893205bd",
+      "name": "Keratin Smooth & Anti-Frizz Treatment",
+      "slug": "keratin-smooth-anti-frizz-treatment",
+      "description": "Protein-enriched formula that seals hair cuticles, eliminates humidity frizz, and imparts silky smoothness.",
+      "image_url": "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80",
+      "price_inr": null,
+      "starting_price_inr": null,
+      "duration_minutes": 120,
+      "is_active": 1,
+      "display_order": 2,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "6b812bc0-0e6d-4c5b-9213-182940a2f938",
+      "category_id": "8b318986-1843-4c97-9b93-a9e96c275449",
+      "name": "Deep Cleansing Hair Wash & Volume Blow-Dry",
+      "slug": "deep-cleansing-hair-wash-volume-blowdry",
+      "description": "Invigorating double shampoo wash with conditioning treatment, followed by a volume-boosting blowout and soft curls or sleek finish.",
+      "image_url": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&q=80",
+      "price_inr": null,
+      "starting_price_inr": 350,
+      "duration_minutes": 35,
+      "is_active": 1,
+      "display_order": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "6a7fbd58-3466-4112-bc10-ee1f1c301409",
+      "category_id": "4a16e0b7-8f00-4fa3-a111-5779dc8e4de7",
+      "name": "Radiance Fruit Facial & Skin Glow Ritual",
+      "slug": "radiance-fruit-facial-skin-glow",
+      "description": "Multi-step facial including deep pore cleansing, fruit enzyme scrub, soothing massage cream, and hydration mask.",
+      "image_url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80",
+      "price_inr": null,
+      "starting_price_inr": null,
+      "duration_minutes": 50,
+      "is_active": 1,
+      "display_order": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    }
+  ],
+  "appointments": [],
+  "enquiries": [],
+  "gallery_images": [
+    {
+      "id": "c22b664c-e606-4a4f-a228-2817da99d7ee",
+      "image_url": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80",
+      "caption": "Modern fade cut and structured pompadour styling",
+      "category": "Men's Hairstyles",
+      "alt_text": "Precision men haircut with modern taper fade",
+      "display_order": 1,
+      "is_published": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "38319a58-deef-455a-9f2a-570553b6c1ac",
+      "image_url": "https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=800&q=80",
+      "caption": "Layered blowout with natural movement and bounce",
+      "category": "Women's Hairstyles",
+      "alt_text": "Woman showing layered haircut with soft waves",
+      "display_order": 2,
+      "is_published": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "38e3c404-dd51-445b-97a2-6830a5356473",
+      "image_url": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
+      "caption": "Caramel balayage tones on deep espresso hair",
+      "category": "Hair Colour",
+      "alt_text": "Balayage hair color with smooth shiny finish",
+      "display_order": 3,
+      "is_published": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "bd0bcf54-092b-450a-8ffd-ea2804adc727",
+      "image_url": "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=800&q=80",
+      "caption": "Relaxing deep hydration hair spa ritual",
+      "category": "Hair Treatments",
+      "alt_text": "Hair treatment application at modern wash station",
+      "display_order": 4,
+      "is_published": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "0cb01b57-f055-42d8-8fcf-49f840da8123",
+      "image_url": "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80",
+      "caption": "Clean, hygienic, and welcoming salon styling stations",
+      "category": "Salon Interior",
+      "alt_text": "Well lit salon workstation with large mirrors and comfortable chairs",
+      "display_order": 5,
+      "is_published": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "462b6dd8-8b1a-47fd-9b6d-71c017a03e9e",
+      "image_url": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80",
+      "caption": "Crisp line-up and textured beard grooming",
+      "category": "Men's Hairstyles",
+      "alt_text": "Sharp beard grooming and trimmed contour",
+      "display_order": 6,
+      "is_published": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "5465004e-644c-4375-b4a1-aec30f10e821",
+      "image_url": "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80",
+      "caption": "Silky smooth keratin therapy finish",
+      "category": "Hair Treatments",
+      "alt_text": "Client with sleek glossy straightened hair",
+      "display_order": 7,
+      "is_published": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    },
+    {
+      "id": "3440236b-334d-4517-8868-24426dae78a1",
+      "image_url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80",
+      "caption": "Refreshing skin detan and gentle cleanse",
+      "category": "Skin & Beauty",
+      "alt_text": "Facial therapy session",
+      "display_order": 8,
+      "is_published": 1,
+      "created_at": "2026-10-25T07:22:18.953Z",
+      "updated_at": "2026-10-25T07:22:18.953Z"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "f925c480-8392-4efa-aa66-02cde329af3e",
+      "admin_user_id": "ef804240-e8f7-4e0b-8f19-d147f51ff450",
+      "action": "LOGIN",
+      "entity_type": "auth",
+      "entity_id": "ef804240-e8f7-4e0b-8f19-d147f51ff450",
+      "created_at": "2026-10-25T08:03:25.642Z",
+      "metadata": "{\"email\":\"admin@cutandlooks.com\"}"
+    },
+    {
+      "id": "74149059-8f4e-47e9-937c-cb1272e23910",
+      "admin_user_id": "ef804240-e8f7-4e0b-8f19-d147f51ff450",
+      "action": "UPDATE_SERVICE",
+      "entity_type": "services",
+      "entity_id": "b5baa3cc-52d8-423d-92df-b7264873b200",
+      "created_at": "2026-10-25T08:05:32.773Z",
+      "metadata": "{\"name\":\"Beard Sculpting & Contour Styling\"}"
+    }
+  ]
+};
+export default initialData;
